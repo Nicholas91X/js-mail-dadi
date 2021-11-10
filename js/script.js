@@ -14,15 +14,17 @@ let sentinella = false;
 
 
 for(i = 0; i < listaMail.length; i++) {
+    console.log(listaMail[i]);
     if (listaMail[i] == mailUtente) {
         sentinella = true;
-        console.log(listaMail[i])
     }
 
 }
 
 if (sentinella == true) {
     alert("Mail presente in elenco")
+} else {
+    alert("Mail assente")
 }
 
 
