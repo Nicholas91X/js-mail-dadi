@@ -4,22 +4,27 @@
 
 
 // ******** esercizio 1
-// const listaMail = ["francesco@gmail.com", "mario@gmail.com", "giovanni@gmail.com", "valentina@gmail.com", "monica@yahoo.com", "cecilia@gmail.com", "alessandro@hotmail.it"];
+const listaMail = ["francesco@gmail.com", "mario@gmail.com", "giovanni@gmail.com", "valentina@gmail.com", "monica@yahoo.com", "cecilia@gmail.com", "alessandro@hotmail.it"];
 
 // let mailUtente = prompt("Inserisci la tua mail");
+let mailUtente = prompt("Inserisci la tua mail")
 
-// let sentinella = false;
+let sentinella = false;
 
-// for(i = 0; i < listaMail.length; i++) {
-//     if (listaMail[i] = mailUtente) {
-//         sentinella = true;
-//         console.log(listaMail[i])
-//     }
-// }
 
-// if (sentinella == true) {
-//     alert("Mail presente in elenco")
-// }
+
+for(i = 0; i < listaMail.length; i++) {
+    if (listaMail[i] == mailUtente) {
+        sentinella = true;
+        console.log(listaMail[i])
+    }
+
+}
+
+if (sentinella == true) {
+    alert("Mail presente in elenco")
+}
+
 
 // ********* esercizio 2
 document.getElementById("button").addEventListener("click", function(){
